@@ -194,7 +194,7 @@ void helpMsg(void)
 		Serial.println("'h' --->     help information  (this);");
 		Serial.println("'v' --->     send PID controller info;");	
 		Serial.println("'s' --->     change PID setValue;   use '+' '-'");
-        Serial.println("'e' --->     change entropy;        use '+' '-'");
+        	Serial.println("'e' --->     change entropy;        use '+' '-'");
 		Serial.println("'k' --->     change cycle interval; use '+' '-'");
 		Serial.println("'p' --->     change Kp ;            use '+' '-'");
 		Serial.println("'i' --->     change Ki ;            use '+' '-'");
@@ -260,7 +260,7 @@ Pin ledCtl(LED);  //
 
 //交互信息上升沿对象
 Edge edge_h,edge_v,edge_f,edge_x,edge_r,edge_s,edge_e,edge_k,edge_w,edge_p,edge_i,edge_d,edge_R;   
-//
+//脉冲发生器上升沿对象
 Edge pulse_x_Hz;
 
 //timer&Pid继承类对象
